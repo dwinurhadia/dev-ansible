@@ -1,2 +1,12 @@
 ---
 # tasks file for mysql
+- name: Create mysql database
+  sudo: yes
+  mysql_db: name={{ wp_mysql_db }} state=present
+
+- name: Create mysql user
+  sudo: yes
+  mysql_user: 
+    name={{ wp_mysql_user }} 
+    password={{ wp_mysql_password }} 
+    priv=*.*:ALL
