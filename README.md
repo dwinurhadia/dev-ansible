@@ -1,4 +1,15 @@
-# Ansible  #
+![](https://cdn-images-1.medium.com/max/697/1*qykIU2PUoEnkdoPuYvIlOg.png)
+
+# Infrastructur as a Code  #
+
+
+Infrastructure as Code adalah proses penyediaan IT infrastruktur dimana sistem dibangun dan dikelola melalui kode secara automasi (otomatis), bukan secara manual. Atau bisa disebut juga bahasa kerennya Programmable Infrastructure.
+
+Dengan menggunakan kode dan meng-automasi, proses setting dan konfigurasi baremetal, virtual mesin, cloud computing baik itu instalasi baru, perubahan konfigurasi dapat dilakukan secara cepat, mudah, dan berulang. Di sisi lain juga, ada manfaat lainnya yaitu dokumentasi. Jadi siapapun tahu konfigurasi server, kebutuhan aplikasi server dan sebagainya.
+
+Untuk menerapkan IAC tools/alat yang digunakan adalah 	Packer (build image), Terraform (build vm dan privisioning instance/vm/server), Ansible, Chef, Puppet & Salt Stack (Configurations Management).
+
+Artikel kali ini menggunakan `ansible` untuk demo `IAAC`
 
 ### Installing ###
     root@ubuntuc:/home/vagrant# sudo apt-get update
@@ -367,11 +378,11 @@ Cek directory /tmp pada masing masing host
     }
 
 ## Color Notations ##
-**Green : Success**
+![#c5f015](https://placehold.it/15/00FF00/000000?text=+) **Green : Success**
 
-**Yellow : Success with change**
+![#c5f015](https://placehold.it/15/ffff00/000000?text=+) **Yellow : Success with change**
 
-**Red : Failure**
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)  **Red : Failure**
 
 ## Idempotence ##
 
